@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event registration Form</title>
+</head>
+<style>
+    .main {
+        width: 800px;
+        height: 1000px;
+        border: 1px solid black;
+        margin-left: 500px;
+        padding: 20px;
+        background-color: rgb(245, 241, 241);
+        filter: drop-shadow(10px 10px 20px);
+        text-transform: capitalize;
+    }
+
+    .ERF {
+        background-color: rgba(190, 190, 190, 0.78);
+        height: 200PX;
+        margin-top: -20px;
+
+    }
+
+    h1:hover {
+        text-decoration: underline;
+        color: rgb(39, 136, 246);
+    }
+
+    h4 {
+        border: 1px solid black;
+        width: 95%;
+        height: 30px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        background-color: rgb(221, 216, 216);
+    }
+
+    .li1 {
+        float: left;
+        list-style: none;
+        padding-left: 10px;
+        padding-right: 80px;
+    }
+
+    .li2 {
+        list-style: none;
+        width: 300px;
+        height: 120px;
+        float: left;
+
+    }
+
+    /* img {
+        width: 250px;
+        height: 80px;
+        margin-left: 80px;
+    } */
+
+    .name {
+        float: left;
+        margin: 0;
+        margin-left: 30px;
+
+    }
+
+    .phonenumber {
+        float: left;
+    }
+
+    .email {
+        float: left;
+        margin-left: 100px;
+    }
+
+    .form {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #date {
+        margin-left: 80px;
+    }
+
+    .checkbox {
+        width: 400px;
+        height: 100px;
+
+        float: left;
+    }
+
+    .sign {
+        display: flex;
+
+        float: left;
+        padding-left: 150px;
+
+    }
+
+    #e1 {
+        margin-left: 40px;
+    }
+
+    .legend :hover {
+
+        background-color: rgb(201, 197, 197);
+
+    }
+
+
+    .email {
+        margin-left: 60%;
+        margin-top: -40px;
+    }
+
+    .input {
+        width: 110px;
+        height: 30px;
+        margin-top: -100px;
+        margin-left: 150px;
+
+    }
+
+    .btn {
+        margin: 20px;
+
+    }
+</style>
+
+<body>
+    <div class="main">
+        <form action="">
+            <div class="ERF">
+                <h1>Event registration Form </h1>
+                <div class="li1">
+                    <li>Event name</li>
+                    <li>date</li>
+                    <li>time</li>
+                    <li>Speaker</li>
+                    <li>Organizer</li>
+                    <li>More Information</li>
+                </div>
+                <div class="li2">
+                    <li>: Digital Marketing Masterclass</li>
+                    <li>: october 15,2028</li>
+                    <li>: 2.00 PM-4:00 PM</li>
+                    <li>: sarah johahnson(digital marketing expert)</li>
+                    <li>: Rise Marketing</li>
+                    <li>: <a href="">www.risemarketing.com</a> </li>
+                </div>
+                <!-- <img src="https://www.pngall.com/wp-content/uploads/5/Digital-Marketing-PNG-Pic.png" alt=""> -->
+            </div>
+            <hr>
+            <fieldset>
+                <legend class="legend">
+                    <h4> participent Information</h4>
+                </legend>
+                <form action="" class="form">
+                    <label for="">full name</label><br>
+                    <input type="text" size="60px" required>
+
+                    <label for="" id="date">Date</label>
+                    <input type="date" size="40px" required><br><br>
+
+                    <label for="">Gender</label><br>
+                    <input type="radio" name="Gender" id="">male
+                    <input type="radio" name="Gender" id="">female
+                    <input type="radio" name="Gender" id="">other<br><br><br>
+
+                    <label for="" class="phonenumber">phone number</label><br>
+                    <input type="text" size="30px" maxlength="10" required><br>
+
+                    <label class="email">email</label><br>
+                    <input type="" size="35px" maxlength="10" class="email" required><br>
+
+                    <label for="">where did you hear about this virtual event ?</label><br><br>
+                    <input type="checkbox" name="facebook" id="e1">facebook
+                    <input type="checkbox" name="youtube" id="e1">youtube
+                    <input type="checkbox" name="instagram" id="e1">instagram
+                    <input type="checkbox" name="twitter" id="e1">twitter
+                    <input type="checkbox" name="other" id="e1">other
+                    <br>
+            </fieldset>
+            <fieldset>
+                <legend class="legend">
+                    <h4> payment Information</h4>
+                </legend>
+                <label for="">number of tickets</label> <br>
+                <input type="text" size="30px" maxlength="10"><br><br>
+
+                <label for="">payment method</label><br>
+                <input type="radio" name="selector" id="">credit card
+                <input type="radio" name="selector" id="">debit card
+                <input type="radio" name="selector" id="">cash
+                <input type="radio" name="selector" id="">credit <br><br><br>
+        </form>
+        <div class="checkbox">
+            <input type="checkbox">
+            i understand that participation in this event may involved some degree of risk. i release rise marketing
+            form any lability for injury. loss or damage to personal property.
+
+        </div>
+        <div class="sign">
+            date: may 5,2028 <br><br>
+        </div>
+        <div>
+            <input type="text" class="input">
+        </div><br><br>
+
+        <p> <input type="reset" value="reset" class="btn">
+            <a href="submit.html"><input type="button" value="submit"></a>
+        </p>
+        </fieldset>
+        </form>
+</body>
+
+</html>
